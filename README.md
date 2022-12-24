@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=raufzer" alt="raufzer" /></a> </p>
 
-- 🌱 I’m currently learning **Moblie Dev And CyberSecurity fields*
+- 🌱 I’m currently learning *Moblie Dev And CyberSecurity fields*
 
 - 💬 Ask me about **graphic design**
 
