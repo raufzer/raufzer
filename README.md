@@ -7,7 +7,7 @@
 
 - 🌱 I’m currently learning *Moblie Dev And CyberSecurity fields*
 
-- 💬 Ask me about **graphic design**
+- 💬 Ask me about **Graphic Design**
 
 - 📫 How to reach me **zerkhefraouf90@gmail.com**
 
