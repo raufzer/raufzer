@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **zerkhefraouf90@gmail.com**
 
-- 📄 Know about my experiences [https://linktr.ee/raufzer](https://linktr.ee/raufzer)
+- 📄 Know more about me [https://linktr.ee/raufzer](https://linktr.ee/raufzer)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
