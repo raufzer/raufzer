@@ -1,7 +1,6 @@
 
 # 💫 About Me:
-<br>🌱 I’m currently learning Cross Platform App Development<br>
-<br> Dart and Flutter <br>
+<br> I’m currently learning Cross Platform App Development<br>
 
 
 ## 🌐 Socials:
