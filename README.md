@@ -1,5 +1,5 @@
 # 💫 About Me:
-🌱 I’m currently learning Mobile Dev and CyberSecurity<br>💬 Ask me about Graphic Design<br>📫 How to reach me : zerkhefraouf90@gmail.com<br>📄 Know about my experiences : https://linktr.ee/raufzer 
+🌱 I’m currently learning Dart and Flutter<br>💬 Ask me about Graphic Design<br>📫 How to reach me : zerkhefraouf90@gmail.com<br>📄 Know about my experiences : https://linktr.ee/raufzer 
 
 
 ## 🌐 Socials:
