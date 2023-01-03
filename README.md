@@ -1,6 +1,6 @@
 
 # 💫 About Me:
-<br> I’m currently learning Cross Platform App Development<br>
+<center><br> I’m currently learning Cross Platform App Development<br></center>
 
 
 ## 🌐 Socials:
