@@ -1,11 +1,3 @@
-Hi My name is Abd Raouf
-=================================================================================================================================
-
-Computer science student and Designer
--------------------------------------
-
-* 🧠  I'm learning Cross Platform App Development
-* ✉️  You can contact me at [a\_zerkhef@estin.dz](mailto:a_zerkhef@estin.dz)
 
 ### Programming Languages
 
