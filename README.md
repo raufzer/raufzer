@@ -41,6 +41,7 @@
 <a href="http://www.github.com/raufzer"><img src="https://github-readme-activity-graph.cyclic.app/graph?username=raufzer&bg_color=1c1917&color=ffffff&line=6366f1&point=ffffff&area_color=1c1917&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph" alt="GitHub Commits Graph" /></a>
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=raufzer&theme=nightowl&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+<img src=https://camo.githubusercontent.com/bb8080defde723af943313cb098a67f22baac7be6735f60b756ff8b852b54e28/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d726175667a6572267468656d653d6e696768746f776c26686964655f626f726465723d66616c736526696e636c7564655f616c6c5f636f6d6d6974733d66616c736526636f756e745f707269766174653d66616c7365266c61796f75743d636f6d70616374</img> 
 
 
 
