@@ -30,13 +30,6 @@
 
 <p align="left"> <a href="https://www.behance.com/raufzer" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/behance.svg" width="32" height="32" /></a> <a href="https://discord.com/users/!RAUF#6815" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="32" height="32" /></a>   <a href="https://www.stackoverflow.com/users/20944076/abd-raouf-zerkhef" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/stackoverflow.svg" width="32" height="32" /></a> <a href="https://www.youtube.com/c/@abdraoufzerkhef5695/featured" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/youtube.svg" width="32" height="32" /></a> <a href="https://www.twitch.tv/raufzer" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitch.svg" width="32" height="32" /></a></p>
 
-### Badges
-
-<b>My GitHub Stats</b>
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=raufzer&theme=nightowl&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-
 
 ### Support Me
 
