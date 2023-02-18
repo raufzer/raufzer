@@ -8,20 +8,6 @@
 <a href="https://flutter.dev/" target="_blank" rel="noreferrer"><img src="https://svgur.com/i/pJc.svg" width="36" height="36" alt="Flutter" /></a>
 </p>
 
-### Tools
-
-
-<p align="left">
-<a href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer"><img src="https://c.top4top.io/p_2562d7xxt3.png" width="36" height="36" alt="Photoshop" /></a>
-<a href="https://www.adobe.com/mena_en/products/photoshop-lightroom.html" target="_blank" rel="noreferrer"><img src="https://a.top4top.io/p_2562jonks1.png" width="36" height="36" alt="Lightroom" /></a>
-<a href="https://www.adobe.com/uk/products/aftereffects.html" target="_blank" rel="noreferrer"><img src="https://b.top4top.io/p_2562fzbwm2.png" width="36" height="36" alt="After Effects" /></a>
-<a href="https://www.adobe.com/uk/products/premiere.html" target="_blank" rel="noreferrer"><img src="https://e.top4top.io/p_2562zp4555.png" width="36" height="36" alt="Premiere Pro" /></a>
-<a href="https://www.adobe.com/mena_en/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://b.top4top.io/p_2562lu9u01.png" width="36" height="36" alt="Illustrator" /></a>
-<a href="https://www.vegascreativesoftware.com/us/vegas-pro/" target="_blank" rel="noreferrer"><img src="https://a.top4top.io/p_25629vfg81.png" width="36" height="36" alt="Vegas Pro" /></a>
-</p>
-
-
-
 ### Social Media
 
 <a href="https://www.facebook.com/Raouf8Zer/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg" width="32" height="32" /></a> <a href="http://www.instagram.com/rauf.zer/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/raufzer/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
