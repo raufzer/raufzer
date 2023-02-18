@@ -8,8 +8,6 @@
 <a href="https://flutter.dev/" target="_blank" rel="noreferrer"><img src="https://svgur.com/i/pJc.svg" width="36" height="36" alt="Flutter" /></a>
 </p>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raufzer&layout=tokyonight)](https://github.com/raufzer/github-readme-stats)
-
 ### Social Media
 
 <a href="https://www.facebook.com/Raouf8Zer/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg" width="32" height="32" /></a> <a href="http://www.instagram.com/rauf.zer/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/raufzer/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
