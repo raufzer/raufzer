@@ -8,6 +8,7 @@
 <a href="https://flutter.dev/" target="_blank" rel="noreferrer"><img src="https://svgur.com/i/pJc.svg" width="36" height="36" alt="Flutter" /></a>
 </p>
 
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raufzer"/>
 
 ### Social Media
 
