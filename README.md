@@ -1,4 +1,4 @@
-![logo](https://github.com/raufzer/raufzer/blob/main/Github%20Profile%20Banner.png)
+
 <div align="center">
   
 <img src="https://github.com/raufzer/raufzer/blob/main/Programming%20Languages.png"/>
