@@ -1,4 +1,6 @@
-import githubIcon from '@/assets/icons/github.svg?raw';
+import LinkedinIcon from '@/components/ui/icons/linkedin.astro'
+import XIcon from '@/components/ui/icons/x.astro'
+import GithubIcon from '@/components/ui/icons/github.astro'
 
 export const NAV_LINKS = [
   {
@@ -17,19 +19,18 @@ export const NAV_LINKS = [
 
 export const SOCIAL_LINKS = [
   {
-    name: "GitHub",
-    url: "https://github.com/raufzer",
-    icon: githubIcon,
-    type: "svg" as const
+    name: 'Github',
+    icon: GithubIcon,
+    url: "https://github.com/Louai-Zokerburg",
   },
   {
-    name: "LinkedIn", 
-    url: "https://linkedin.com/in/raufzer",
-    type: "component" as const
+    name: 'Linkedin',
+    icon: LinkedinIcon,
+    url: "https://www.linkedin.com/in/louai-boumediene-018919262/",
   },
   {
-    name: "X",
-    url: "https://x.com/raufzer",
-    type: "component" as const
-  }
+    name: 'X',
+    icon: XIcon,
+    url: "https://x.com/Louai_Dourov",
+  },
 ];

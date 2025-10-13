@@ -33,6 +33,8 @@ import GitIcon from '@/assets/icons/git.svg?raw'
 import GithubIcon from '@/assets/icons/github.svg?raw'
 import GithubActionsIcon from '@/assets/icons/githubactions.svg?raw'
 
+
+
 const processCobraSVG = (svg: string) => {
   return svg
     .replace('<?xml version="1.0" encoding="UTF-8"?>', '')

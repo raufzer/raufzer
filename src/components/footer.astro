@@ -1,7 +1,5 @@
 ---
 import { SOCIAL_LINKS } from "@/lib/constants";
-import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
-import XIcon from "@/components/ui/icons/x.astro";
 ---
 
 <footer class="w-full border-t border-dashed md:border-b">
@@ -19,18 +17,7 @@ import XIcon from "@/components/ui/icons/x.astro";
       {
         SOCIAL_LINKS.map(link => (
           <a href={link.url} aria-label={link.name}>
-            {link.name === "GitHub" && (
-              <div 
-                class="size-4 flex items-center justify-center duration-150 hover:text-primary"
-                set:html={link.icon}
-              />
-            )}
-            {link.name === "LinkedIn" && (
-              <LinkedinIcon className="size-4 duration-150 hover:text-primary" />
-            )}
-            {link.name === "X" && (
-              <XIcon className="size-4 duration-150 hover:text-primary" />
-            )}
+            <link.icon className="size-4 duration-150 hover:text-primary" />
           </a>
         ))
       }
