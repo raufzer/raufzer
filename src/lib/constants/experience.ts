@@ -36,7 +36,7 @@ export const EXPERIENCES: Experience[] = [
     positions: [
       {
         title: "Engineer’s Degree in Computer Science — Specialization: AI & Data Science | Ecole Supérieure en Sciences et Technologies de l’Informatique et du Numérique (ESTIN)",
-        year: "09.2022 - 07.2027 (expected)",
+        year: "09.2022 - 09.2027 (expected)",
         description: `
 - ♦ 5-year engineering program focused on software engineering, AI, and data science. Currently in 4th year.
 - ♦ Built a strong foundation in algorithms, data structures, and object-oriented programming.
