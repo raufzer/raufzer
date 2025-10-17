@@ -1,6 +1,6 @@
 ---
 import { Picture } from "astro:assets";
-import ImgAvatar from "@/assets/raufzer.jpg";
+import ImgAvatar from "@/assets/raufzer.png";
 import { PROFILE_INFO } from "@/lib/constants/profile";
 
 interface Props {
@@ -22,11 +22,11 @@ const formats = ["avif", "webp"];
 <Picture
   class:list={[className]}
   src={ImgAvatar}
-  widths={[size, size * 2]}
+  widths={[size, size * 1.5, size * 2, size * 3]}
   sizes={`(max-width: ${size}px) 100vw, ${size}px`}
   formats={formats}
   alt={`${PROFILE_INFO.displayName}'s avatar`}
-  quality="mid"
+  quality="high"
   loading={priority ? "eager" : "lazy"}
   decoding="async"
 />
