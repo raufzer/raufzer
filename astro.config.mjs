@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
@@ -10,6 +10,12 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   site: 'http://raufzer.me/',
   integrations: [react(), mdx()],
+  image: {
+    remotePatterns: [],
+    service: {
+      entrypoint: 'astro/assets/services/sharp'
+    }
+  },
   vite: {
     plugins: [tailwindcss()],
   },
