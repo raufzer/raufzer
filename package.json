@@ -11,6 +11,7 @@
   "dependencies": {
     "@astrojs/mdx": "^4.2.1",
     "@astrojs/react": "^4.2.1",
+    "@excalidraw/excalidraw": "^0.18.0",
     "@fontsource/geist-sans": "^5.2.5",
     "@fontsource/jetbrains-mono": "^5.2.5",
     "@fontsource/roboto-condensed": "^5.2.5",
@@ -21,6 +22,7 @@
     "@typescript-eslint/parser": "^8.28.0",
     "@vercel/analytics": "^1.5.0",
     "astro": "^5.5.4",
+    "chart.js": "^4.5.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "developer-icons": "^5.3.2",
@@ -32,6 +34,7 @@
     "markdown-it": "^14.1.0",
     "mdast-util-from-markdown": "^2.0.2",
     "mdast-util-to-string": "^4.0.0",
+    "mermaid": "^11.12.1",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
@@ -39,11 +42,17 @@
     "react-dom": "^19.0.0",
     "react-markdown": "^10.1.0",
     "reading-time": "^1.5.0",
+    "rehype-mermaid": "^3.0.0",
+    "remark-plantuml": "^0.1.0-0",
     "sharp": "^0.33.5",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.16",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.28.0"
+  },
+  "devDependencies": {
+    "@playwright/browser-chromium": "^1.56.1",
+    "playwright": "^1.56.1"
   }
 }
