@@ -28,9 +28,6 @@ export default function BlockingVsNonBlockingGantt() {
     style A fill:#6b7280,color:#ffffff
     style B fill:#f87171ff,color:#ffffff
     style C fill:#4ade80ff,color:#000000
-    style D,E,F,G,H,I,J fill:#f87171ff,color:#ffffff
-    style K,L,M fill:#4ade80ff,color:#000000
-    style N,O,P,Q fill:#4ade80ff,color:#000000
 `} />
     );
 }

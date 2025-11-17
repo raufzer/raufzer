@@ -29,7 +29,7 @@ export default function RateLimitingFlowchart() {
     
     style Input fill:#e2e8f0,color:#000000
     style Slots fill:#4ade80ff,color:#000000  
-    style Active fill:#93c5fd,color:#000000
+    style Active fill:#6b7280,color:#000000
     style Wait fill:#f87171ff,color:#ffffff
 `} />
     );

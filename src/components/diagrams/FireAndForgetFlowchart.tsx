@@ -13,9 +13,9 @@ export default function FireAndForgetFlowchart() {
     C --> H[Async: Track Item 3]
     C --> I[Async: Track Item 4]
     
-    style A,B,D,E fill:#f87171ff,color:#ffffff
-    style C fill:#60a5fa,color:#000000
-    style F,G,H,I fill:#4ade80ff,color:#000000
+    style B fill:#6b7280,color:#ffffff
+    style C fill:#f87171ff,color:#ffffff
+    style D fill:#4ade80ff,color:#000000
 `} />
     );
 }
