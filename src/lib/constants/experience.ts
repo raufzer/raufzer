@@ -6,7 +6,7 @@ export const EXPERIENCES: Experience[] = [
     positions: [
       {
         title: "Backend Developer",
-        year: "05.2025 - 12.2025",
+        year: "05.2025",
         description: `
 - ♦ Remote work on a high-performance **AdServer** for retail media, built with **Go (Gin)**.
 - ♦ Implemented low-latency, scalable ad delivery and real-time programmatic bidding logic using Go concurrency patterns.
