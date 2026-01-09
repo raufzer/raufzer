@@ -2,6 +2,34 @@ import type { Experience } from "../types";
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Maystro Delivery - (Algiers, Algeria)",
+    positions: [
+      {
+        title: "Flutter Developer",
+        year: "12.2025 - 01.2026",
+        description: `
+- ♦ Developed and integrated the **DZ warehouse management module** for the Winrah delivery app using **Flutter/Dart**.
+- ♦ Implemented complete UI/UX for task management, item lookup, and location-based put-away workflows.
+- ♦ Built state management using **BLoC pattern** for handling complex task states and real-time updates.
+- ♦ Integrated backend APIs for task operations, location management, and product tracking.
+- ♦ Created reusable widgets including task cards, progress indicators, scanners, and custom dialogs.
+- ♦ Delivered production-ready features within a 15-day sprint timeline.
+        `,
+        skills: [
+          "Flutter",
+          "Dart",
+          "BLoC Pattern",
+          "State Management",
+          "REST API Integration",
+          "UI/UX Development",
+          "QR Code Scanning",
+          "Git",
+        ],
+      },
+    ],
+  },
+
+  {
     company: "RetailSpot - (Paris, France)",
     positions: [
       {
