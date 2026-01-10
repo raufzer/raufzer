@@ -5,16 +5,15 @@ export const EXPERIENCES: Experience[] = [
     company: "Maystro Delivery - (Algiers, Algeria)",
     positions: [
       {
-        title: "Flutter Developer",
-        year: "12.2025 - 01.2026",
+        title: "Mobile Developer (Freelance)",
+        year: "Dec 2025 - Jan 2026",
         description: `
-- ♦ Developed and integrated the **DZ warehouse management module** for the Winrah delivery app using **Flutter/Dart**.
-- ♦ Implemented complete UI/UX for task management, item lookup, and location-based put-away workflows.
+- ♦ Developed and integrated the **DZ warehouse management module** for the Winrah delivery app for PDA devices using **Dart (Flutter)**.
+- ♦ Implemented complete UI/UX for task management, item lookup, and location-based put-away workflows with reusable widgets (task cards, progress indicators, scanners, dialogs).
 - ♦ Built state management using **BLoC pattern** for handling complex task states and real-time updates.
 - ♦ Integrated backend APIs for task operations, location management, and product tracking.
-- ♦ Created reusable widgets including task cards, progress indicators, scanners, and custom dialogs.
 - ♦ Delivered production-ready features within a 15-day sprint timeline.
-        `,
+`,
         skills: [
           "Flutter",
           "Dart",
@@ -33,10 +32,10 @@ export const EXPERIENCES: Experience[] = [
     company: "RetailSpot - (Paris, France)",
     positions: [
       {
-        title: "Backend Developer",
-        year: "05.2025",
+        title: "Backend Developer (Freelance)",
+        year: "May 2025 - Present",
         description: `
-- ♦ Remote work on a high-performance **AdServer** for retail media, built with **Go (Gin)**.
+- ♦ Developed a high-performance **AdServer** for retail media remotely, built with **Go (Gin)**.
 - ♦ Implemented low-latency, scalable ad delivery and real-time programmatic bidding logic using Go concurrency patterns.
 - ♦ Optimized ad response times with in-memory caching strategies and careful resource management.
 - ♦ Integrated **OpenRTB** and **Prebid.js** to support programmatic bidding and DSP compatibility.
@@ -63,9 +62,10 @@ export const EXPERIENCES: Experience[] = [
     company: "Education",
     positions: [
       {
-        title: "Engineer’s Degree in Computer Science — Specialization: AI & Data Science | Ecole Supérieure en Sciences et Technologies de l’Informatique et du Numérique (ESTIN)",
-        year: "09.2022 - 09.2027 (expected)",
+        title: "Engineer's Degree in Computer Science",
+        year: "Sep 2022 - Sep 2027 (expected)",
         description: `
+- ♦ **Specialization: AI & Data Science** at Ecole Supérieure en Sciences et Technologies de l'Informatique et du Numérique (ESTIN).
 - ♦ 5-year engineering program focused on software engineering, AI, and data science. Currently in 4th year.
 - ♦ Built a strong foundation in algorithms, data structures, and object-oriented programming.
 - ♦ Studied AI, probability & statistics, and random processes relevant to modelling and ML systems.
