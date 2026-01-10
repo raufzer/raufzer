@@ -34,23 +34,18 @@ import GithubIcon from '@/assets/icons/github.svg?raw'
 import GithubActionsIcon from '@/assets/icons/githubactions.svg?raw'
 
 
-
-const processCobraSVG = (svg: string) => {
-  return svg
-    .replace('<?xml version="1.0" encoding="UTF-8"?>', '')
-    .replace(/<svg[^>]*>/, '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 287 333" fill="currentColor">');
-};
-
-const processGinSVG = (svg: string) => {
-  return svg
-    .replace('<?xml version="1.0" encoding="UTF-8"?>', '')
-    .replace(/<svg[^>]*>/, '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">');
-};
-
-const processCollySVG = (svg: string) => {
-  return svg
-    .replace('<?xml version="1.0" encoding="UTF-8"?>', '')
-    .replace(/<svg[^>]*>/, '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">');
+const processSVGWithViewBox = (svg: string) => {
+  let out = svg.replace('<?xml version="1.0" encoding="UTF-8"?>', '');
+  const svgTagMatch = out.match(/<svg([^>]*)>/);
+  if (!svgTagMatch) return out;
+  const attrs = svgTagMatch[1];
+  const widthMatch = attrs.match(/width="(\d+(?:\.\d+)?)"/);
+  const heightMatch = attrs.match(/height="(\d+(?:\.\d+)?)"/);
+  const width = widthMatch ? parseFloat(widthMatch[1]) : null;
+  const height = heightMatch ? parseFloat(heightMatch[1]) : null;
+  const viewBox = width && height ? `0 0 ${width} ${height}` : '0 0 24 24';
+  out = out.replace(/<svg[^>]*>/, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" fill="currentColor">`);
+  return out;
 };
 
 export const TECH_STACK = [
@@ -80,17 +75,17 @@ export const TECH_STACK = [
   {
     title: "Gin",
     href: "https://gin-gonic.com/",
-    icon: processGinSVG(GinIcon),
+    icon: GinIcon,
   },
   {
     title: "Cobra",
     href: "https://cobra.dev/",
-    icon: processCobraSVG(CobraIcon),
+    icon: CobraIcon,
   },
   {
     title: "Colly",
     href: "http://go-colly.org/",
-    icon: processCollySVG(CollyIcon),
+    icon: CollyIcon,
   },
   {
     title: "Hugo",
@@ -199,4 +194,14 @@ export const TECH_STACK = [
     icon: GithubActionsIcon,
   },
 ];
+
+// .
+for (const item of TECH_STACK) {
+  try {
+    if (item && typeof item.icon === 'string' && !/viewBox=/i.test(item.icon)) {
+      item.icon = processSVGWithViewBox(item.icon);
+    }
+  } catch (e) {
+  }
+}
 
