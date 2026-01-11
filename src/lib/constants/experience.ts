@@ -35,12 +35,12 @@ export const EXPERIENCES: Experience[] = [
         title: "Backend Developer (Freelance)",
         year: "May 2025 - Present",
         description: `
-- ♦ Developed a high-performance **AdServer** for retail media remotely, built with **Go (Gin)**.
+- ♦ Developing a high-performance **AdServer** for retail media remotely, built with **Go (Gin)**.
 - ♦ Implemented low-latency, scalable ad delivery and real-time programmatic bidding logic using Go concurrency patterns.
-- ♦ Optimized ad response times with in-memory caching strategies and careful resource management.
+- ♦ Optimized ad response times with in-memory caching strategies and efficient resource management.
 - ♦ Integrated **OpenRTB** and **Prebid.js** to support programmatic bidding and DSP compatibility.
-- ♦ Collaborated in agile sprints with product and engineering teams to deliver production-ready features.
-        `,
+- ♦ Collaborating in agile sprints with product and engineering teams to deliver production-ready features.
+ `,
         skills: [
           "Go",
           "Gin",
@@ -80,6 +80,7 @@ export const EXPERIENCES: Experience[] = [
           "Databases",
           "Networking",
           "Teamwork",
+          "Technical Communication",
           "Presentations",
         ],
       },
