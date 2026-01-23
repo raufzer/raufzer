@@ -5,10 +5,10 @@ export const EXPERIENCES: Experience[] = [
     company: "Maystro Delivery - (Algiers, Algeria)",
     positions: [
       {
-        title: "Mobile Developer (Freelance)",
+        title: "Mobile Developer",
         year: "Dec 2025 - Jan 2026",
         description: `
-- ♦ Developed and integrated the **DZ warehouse management module** for the Winrah delivery app for PDA devices using **Dart (Flutter)**.
+- ♦ Worked as a short-term contractor (CDD) developing and integrating the **DZ warehouse management module** for the Winrah delivery app for PDA devices using **Dart (Flutter)**.
 - ♦ Implemented complete UI/UX for task management, item lookup, and location-based put-away workflows with reusable widgets (task cards, progress indicators, scanners, dialogs).
 - ♦ Built state management using **BLoC pattern** for handling complex task states and real-time updates.
 - ♦ Integrated backend APIs for task operations, location management, and product tracking.
@@ -32,10 +32,10 @@ export const EXPERIENCES: Experience[] = [
     company: "RetailSpot - (Paris, France)",
     positions: [
       {
-        title: "Backend Developer (Freelance)",
+        title: "Backend Developer",
         year: "May 2025 - Present",
         description: `
-- ♦ Developing a high-performance **AdServer** for retail media remotely, built with **Go (Gin)**.
+- ♦ Worked as a contract backend developer (CDI) on a high-performance **AdServer** for retail media remotely, built with **Go (Gin)**.
 - ♦ Implemented low-latency, scalable ad delivery and real-time programmatic bidding logic using Go concurrency patterns.
 - ♦ Optimized ad response times with in-memory caching strategies and efficient resource management.
 - ♦ Integrated **OpenRTB** and **Prebid.js** to support programmatic bidding and DSP compatibility.
