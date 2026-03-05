@@ -2,7 +2,7 @@ import type { Experience } from "../types";
 
 export const EXPERIENCES: Experience[] = [
   {
-    company: "Okadoo - (Algiers, Algeria / Hybrid)",
+    company: "Okadoo - (Algiers, Algeria)",
     positions: [
       {
         title: "Mobile Developer",
@@ -53,7 +53,7 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "RetailSpot - (Remote / Paris, France)",
+    company: "RetailSpot - (Paris, France)",
     positions: [
       {
         title: "Backend Developer",
