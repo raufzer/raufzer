@@ -2,29 +2,27 @@ import type { Experience } from "../types";
 
 export const EXPERIENCES: Experience[] = [
   {
-    company: "RetailSpot - (Remote / Paris, France)",
+    company: "Okadoo - (Algiers, Algeria / Hybrid)",
     positions: [
       {
-        title: "Backend Developer",
-        year: "May 2025 - Present",
+        title: "Mobile Developer",
+        year: "Feb 2026 - Present",
         description: `
-- ♦ **Achieved sub-100ms latency** for real-time ad auctions by leveraging Go concurrency and high-performance in-memory caching.
-- ♦ **Enabled global DSP compatibility** by integrating OpenRTB and Prebid.js protocols, expanding programmatic bidding capabilities.
-- ♦ **Optimized database performance** and reduced load by 30% through strategic in-memory caching and MongoDB query refinement.
-- ♦ Collaborating in Agile sprints to deliver backend features supporting data-driven shopper targeting and high-traffic events.
- `,
+- ♦ **Accelerated supplier onboarding by ~35%** by developing an end-to-end product creation flow for the supplier-facing mobile app.
+- ♦ **Reduced manual data entry by ~30%** by implementing auto-generated variant combinations with real-time price and SKU configuration.
+- ♦ **Improved app stability by ~25%** by adopting BLoC pattern for state management across complex multi-step forms.
+- ♦ Building features for Algeria's first B2B marketplace using Flutter & Dart following clean architecture principles within Agile sprints.
+`,
         skills: [
-          "Go",
-          "Gin",
-          "Concurrency",
-          "Redis",
-          "MongoDB",
-          "OpenRTB",
-          "Prebid.js",
-          "Low-latency systems",
-          "Docker",
+          "Flutter",
+          "Dart",
+          "BLoC Pattern",
+          "State Management",
+          "Clean Architecture",
+          "REST API Integration",
           "Git",
-          "CI/CD",
+          "Scrum",
+          "ClickUp",
         ],
       },
     ],
@@ -50,6 +48,34 @@ export const EXPERIENCES: Experience[] = [
           "UI/UX Development",
           "QR Code Scanning",
           "Git",
+        ],
+      },
+    ],
+  },
+  {
+    company: "RetailSpot - (Remote / Paris, France)",
+    positions: [
+      {
+        title: "Backend Developer",
+        year: "May 2025 - Present",
+        description: `
+- ♦ **Achieved sub-100ms latency** for real-time ad auctions by leveraging Go concurrency and high-performance in-memory caching.
+- ♦ **Enabled global DSP compatibility** by integrating OpenRTB and Prebid.js protocols, expanding programmatic bidding capabilities.
+- ♦ **Optimized database performance** and reduced load by 30% through strategic in-memory caching and MongoDB query refinement.
+- ♦ Collaborating in Agile sprints to deliver backend features supporting data-driven shopper targeting and high-traffic events.
+ `,
+        skills: [
+          "Go",
+          "Gin",
+          "Concurrency",
+          "Redis",
+          "MongoDB",
+          "OpenRTB",
+          "Prebid.js",
+          "Low-latency systems",
+          "Docker",
+          "Git",
+          "CI/CD",
         ],
       },
     ],
