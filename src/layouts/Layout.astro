@@ -1,6 +1,5 @@
 ---
 import { PageMetadata } from "@/src/components/hybrid-astro-ui/page-metadata";
-import OGImage from "@/src/assets/raufzer.png";
 
 interface Props {
 	title: string;
@@ -20,7 +19,6 @@ const { title, description, locale, alternateLinks } =
 			lang={locale}
 			title={title}
 			description={description}
-			image={OGImage}
 			enableClientRouter
 			ogType="website"
 			favicons={[
