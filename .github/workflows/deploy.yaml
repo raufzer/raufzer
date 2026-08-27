@@ -4,7 +4,7 @@ on:
   # Runs on pushes targeting the astro-version-2 branch
   push:
     branches:
-      - astro-version-2
+      - astro-version-3
 
   # Allows you to run this workflow manually from the Actions
   workflow_dispatch:
