@@ -10,8 +10,8 @@
   "hero": {
     "title": "AI Engineer",
     "p1": "with a strong software engineering foundation, pursuing an engineering degree in Artificial Intelligence & Data Science at ESTIN.",
-    "p2": "I've spent the past year building production-grade, high-performance systems in real-time AdTech, including real-time auction pipelines and optimization systems under strict latency constraints. That experience shapes how I approach AI: I care about models that actually run in production, not just in notebooks.",
-    "p3": "I'm now applying that engineering discipline to AI, with work spanning applied ML (prediction, optimization, RL-based decision-making) and generative AI, aiming to specialize further through research."
+    "p2": "I've spent the past year building production-grade, high-performance systems in real-time AdTech, including real-time auction pipelines and optimization systems under strict latency constraints.",
+    "p3": "I'm now applying that engineering discipline to AI, with work spanning applied ML (prediction, optimization, RL-based decision-making) and aiming to specialize further through research."
   },
   "articles": {
     "title": "Articles",

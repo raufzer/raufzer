@@ -10,8 +10,8 @@
   "hero": {
     "title": "Ingénieur IA",
     "p1": "avec de solides bases en génie logiciel, actuellement en cycle d'ingénieur en Intelligence Artificielle & Science des Données à l'ESTIN.",
-    "p2": "J'ai passé l'année écoulée à construire des systèmes performants et prêts pour la production dans l'AdTech temps réel, notamment des pipelines d'enchères en temps réel et des systèmes d'optimisation soumis à de fortes contraintes de latence. Cette expérience façonne mon approche de l'IA : je m'intéresse aux modèles qui tournent réellement en production, pas seulement dans des notebooks.",
-    "p3": "J'applique désormais cette rigueur d'ingénierie à l'IA, avec des travaux couvrant le ML appliqué (prédiction, optimisation, prise de décision par apprentissage par renforcement) et l'IA générative, avec l'objectif de me spécialiser davantage par la recherche."
+    "p2": "J'ai passé l'année écoulée à construire des systèmes performants et prêts pour la production dans l'AdTech temps réel, notamment des pipelines d'enchères en temps réel et des systèmes d'optimisation soumis à de fortes contraintes de latence.",
+    "p3": "J'applique désormais cette rigueur d'ingénierie à l'IA, avec des travaux couvrant le ML appliqué (prédiction, optimisation, prise de décision par apprentissage par renforcement) avec l'objectif de me spécialiser davantage par la recherche."
   },
   "articles": {
     "title": "Articles",
