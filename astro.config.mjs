@@ -1,31 +1,17 @@
-// @ts-nocheck
-import { defineConfig } from "astro/config";
-import tailwindcss from "@tailwindcss/vite";
+// @ts-check
+import { defineConfig } from 'astro/config';
 
-import react from "@astrojs/react";
-import mdx from "@astrojs/mdx";
+import tailwindcss from '@tailwindcss/vite';
 
-import rehypeMermaid from "rehype-mermaid";
-import remarkPlantUML from "remark-plantuml";
+import sitemap from '@astrojs/sitemap';
 
+// https://astro.build/config
 export default defineConfig({
-  site: "http://raufzer.me/",
-  integrations: [react(), mdx()],
-
-  markdown: {
-    rehypePlugins: [
-      [rehypeMermaid, { strategy: "img-svg" }],
-    ],
-  },
-
-  image: {
-    remotePatterns: [],
-    service: {
-      entrypoint: "astro/assets/services/sharp",
-    },
-  },
+  site: "https://raufzer.me/",
 
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss()]
   },
+
+  integrations: [sitemap()]
 });
