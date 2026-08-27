@@ -1,3 +1,6 @@
 ---
-return Astro.redirect('/en');
+// English is the default locale and is served at the site root (no /en prefix).
+import Portfolio from "@/src/components/Portfolio.astro";
 ---
+
+<Portfolio locale="en" />

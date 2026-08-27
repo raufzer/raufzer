@@ -1,0 +1,271 @@
+---
+import Layout from "@/src/layouts/Layout.astro";
+import { useI18n } from "@ariaskit/astro-i18n";
+import { type LocaleSchema } from "@/src/types";
+import Header from "@/src/components/Header.astro";
+import Hero from "@/src/components/Hero.astro";
+import LinkList from "@/src/components/LinkList.astro";
+import Timeline from "@/src/components/Timeline.astro";
+import Footer from "@/src/components/Footer.astro";
+import Skills from "@/src/components/Skills.astro";
+
+interface Props {
+  locale: string;
+}
+
+const { locale: requested } = Astro.props as Props;
+
+// English is served at the site root, every other locale under /<lang>/.
+const { t, locale } = useI18n<LocaleSchema>({
+  ssg: {
+    astro: Astro,
+    locale: requested,
+  },
+});
+
+// Path prefix for links: "" for the default locale, "/fr" for the rest.
+const base = locale === "en" ? "" : `/${locale}`;
+
+const nav = [
+  { path: `${base}/`, text: t("nav.about") },
+  { path: `${base}/#${t("nav.experience")}`, text: t("nav.experience") },
+  { path: `${base}/#${t("nav.articles")}`, text: t("nav.articles") },
+  { path: `${base}/#${t("nav.projects")}`, text: t("nav.projects") },
+  { path: `${base}/#${t("nav.contact")}`, text: t("nav.contact") },
+];
+
+const heroProps = {
+  name: "Abd Raouf Zerkhef",
+  title: { key: "hero.title", value: t("hero.title") },
+  p1: { key: "hero.p1", value: t("hero.p1") },
+  p2: { key: "hero.p2", value: t("hero.p2") },
+  p3: { key: "hero.p3", value: t("hero.p3") },
+};
+
+// Articles you publish elsewhere. To add one, add the keys to every file in
+// i18n/ (articles.item_1.name / .description / .link) and append an entry here.
+const articles: {
+  nameKey: string;
+  descriptionKey: string;
+  name: string;
+  description: string;
+  link?: string;
+}[] = [];
+
+const articlesProps = {
+  title: { key: "articles.title", value: t("articles.title") },
+  empty: { key: "articles.empty", value: t("articles.empty") },
+  items: articles,
+};
+
+// Projects, same shape as articles. Add i18n keys then append entries here.
+const projects: typeof articles = [];
+
+const projectsProps = {
+  title: { key: "projects.title", value: t("projects.title") },
+  empty: { key: "projects.empty", value: t("projects.empty") },
+  items: projects,
+};
+
+const experienceData = {
+  title: {
+    key: "experience.title",
+    value: t("experience.title"),
+  },
+  entries: [
+    {
+      period: {
+        key: "experience.item_1.period",
+        value: t("experience.item_1.period"),
+      },
+      role: {
+        key: "experience.item_1.role",
+        value: t("experience.item_1.role"),
+      },
+      company: {
+        key: "experience.item_1.company",
+        value: t("experience.item_1.company"),
+      },
+      description: {
+        key: "experience.item_1.description",
+        value: t("experience.item_1.description"),
+      },
+    },
+    {
+      period: {
+        key: "experience.item_2.period",
+        value: t("experience.item_2.period"),
+      },
+      role: {
+        key: "experience.item_2.role",
+        value: t("experience.item_2.role"),
+      },
+      company: {
+        key: "experience.item_2.company",
+        value: t("experience.item_2.company"),
+      },
+      description: {
+        key: "experience.item_2.description",
+        value: t("experience.item_2.description"),
+      },
+    },
+    {
+      period: {
+        key: "experience.item_3.period",
+        value: t("experience.item_3.period"),
+      },
+      role: {
+        key: "experience.item_3.role",
+        value: t("experience.item_3.role"),
+      },
+      company: {
+        key: "experience.item_3.company",
+        value: t("experience.item_3.company"),
+      },
+      description: {
+        key: "experience.item_3.description",
+        value: t("experience.item_3.description"),
+      },
+    },
+  ],
+};
+
+const educationData = {
+  title: {
+    key: "education.title",
+    value: t("education.title"),
+  },
+  entries: [
+    {
+      period: {
+        key: "education.item_1.period",
+        value: t("education.item_1.period"),
+      },
+      role: {
+        key: "education.item_1.role",
+        value: t("education.item_1.role"),
+      },
+      company: {
+        key: "education.item_1.company",
+        value: t("education.item_1.company"),
+      },
+      description: {
+        key: "education.item_1.description",
+        value: t("education.item_1.description"),
+      },
+    },
+  ],
+};
+
+const alternate = [
+  { href: "/", hreflang: "en" },
+  { href: "/fr/", hreflang: "fr" },
+];
+
+const footerContent = {
+  id: t("nav.contact").toLowerCase(),
+  status: {
+    key: "contact.status",
+    value: t("contact.status"),
+  },
+  email_label: {
+    key: "contact.email_label",
+    value: t("contact.email_label"),
+  },
+  email_url: {
+    key: "contact.email_url",
+    value: t("contact.email_url"),
+  },
+  github_label: {
+    key: "contact.github_label",
+    value: t("contact.github_label"),
+  },
+  github_url: {
+    key: "contact.github_url",
+    value: t("contact.github_url"),
+  },
+  x_label: {
+    key: "contact.x_label",
+    value: t("contact.x_label"),
+  },
+  x_url: {
+    key: "contact.x_url",
+    value: t("contact.x_url"),
+  },
+  linkedin_label: {
+    key: "contact.linkedin_label",
+    value: t("contact.linkedin_label"),
+  },
+  linkedin_url: {
+    key: "contact.linkedin_url",
+    value: t("contact.linkedin_url"),
+  },
+};
+
+const skills = [
+  {
+    title: { key: "skills.python.title", value: t("skills.python.title") },
+    category: { key: "skills.python.category", value: t("skills.python.category") },
+    description: { key: "skills.python.description", value: t("skills.python.description") },
+    experience_years: { key: "skills.python.experience_years", value: t("skills.python.experience_years") },
+    experience_label: { key: "skills.python.experience_label", value: t("skills.python.experience_label") },
+  },
+  {
+    primary: true,
+    title: { key: "skills.ai.title", value: t("skills.ai.title") },
+    category: { key: "skills.ai.category", value: t("skills.ai.category") },
+    description: { key: "skills.ai.description", value: t("skills.ai.description") },
+    experience_years: { key: "skills.ai.experience_years", value: t("skills.ai.experience_years") },
+    experience_label: { key: "skills.ai.experience_label", value: t("skills.ai.experience_label") },
+  },
+  {
+    title: { key: "skills.go.title", value: t("skills.go.title") },
+    category: { key: "skills.go.category", value: t("skills.go.category") },
+    description: { key: "skills.go.description", value: t("skills.go.description") },
+    experience_years: { key: "skills.go.experience_years", value: t("skills.go.experience_years") },
+    experience_label: { key: "skills.go.experience_label", value: t("skills.go.experience_label") },
+  },
+  {
+    title: { key: "skills.flutter.title", value: t("skills.flutter.title") },
+    category: { key: "skills.flutter.category", value: t("skills.flutter.category") },
+    description: { key: "skills.flutter.description", value: t("skills.flutter.description") },
+    experience_years: { key: "skills.flutter.experience_years", value: t("skills.flutter.experience_years") },
+    experience_label: { key: "skills.flutter.experience_label", value: t("skills.flutter.experience_label") },
+  },
+  {
+    title: { key: "skills.databases.title", value: t("skills.databases.title") },
+    category: { key: "skills.databases.category", value: t("skills.databases.category") },
+    description: { key: "skills.databases.description", value: t("skills.databases.description") },
+    experience_years: { key: "skills.databases.experience_years", value: t("skills.databases.experience_years") },
+    experience_label: { key: "skills.databases.experience_label", value: t("skills.databases.experience_label") },
+  },
+  {
+    title: { key: "skills.devops.title", value: t("skills.devops.title") },
+    category: { key: "skills.devops.category", value: t("skills.devops.category") },
+    description: { key: "skills.devops.description", value: t("skills.devops.description") },
+    experience_years: { key: "skills.devops.experience_years", value: t("skills.devops.experience_years") },
+    experience_label: { key: "skills.devops.experience_label", value: t("skills.devops.experience_label") },
+  },
+];
+
+---
+
+<Layout
+  locale={locale}
+  title="Abd Raouf Zerkhef"
+  description={t("description")}
+  alternateLinks={alternate}
+>
+  <Header nav={nav} locales={["en", "fr"]} currentLocale={locale} />
+
+  <main>
+    <Hero {...heroProps} />
+    <Timeline {...experienceData} />
+    <Timeline {...educationData} />
+    <LinkList {...articlesProps} />
+    <LinkList {...projectsProps} />
+    <Skills heading={{ key: "skills.heading", value: t("skills.heading") }} content={skills} />
+  </main>
+
+  <Footer {...footerContent} />
+</Layout>
