@@ -1,0 +1,110 @@
+{
+  "description": "Abd Raouf Zerkhef is an AI Engineer with a strong software engineering foundation, building production-grade applied ML and real-time systems while pursuing an engineering degree in AI & Data Science at ESTIN.",
+  "nav": {
+    "about": "about",
+    "articles": "articles",
+    "projects": "projects",
+    "experience": "experience",
+    "contact": "contact"
+  },
+  "hero": {
+    "title": "AI Engineer",
+    "p1": "with a strong software engineering foundation, pursuing an engineering degree in Artificial Intelligence & Data Science at ESTIN.",
+    "p2": "I've spent the past year building production-grade, high-performance systems in real-time AdTech, including real-time auction pipelines and optimization systems under strict latency constraints. That experience shapes how I approach AI: I care about models that actually run in production, not just in notebooks.",
+    "p3": "I'm now applying that engineering discipline to AI, with work spanning applied ML (prediction, optimization, RL-based decision-making) and generative AI, aiming to specialize further through research."
+  },
+  "articles": {
+    "title": "Articles",
+    "empty": "Nothing published yet, writing in progress. Follow along on GitHub in the meantime."
+  },
+  "projects": {
+    "title": "Projects",
+    "empty": "Nothing published yet, projects in progress. Check back soon."
+  },
+  "experience": {
+    "title": "Experience",
+    "item_1": {
+      "period": "May 2025 – Jul 2026",
+      "role": "Backend Engineer",
+      "company": "RetailSpot · Contract",
+      "description": "Built a high-performance ad server in Go, achieving sub-2ms latency on real-time ad auctions. Integrated OpenRTB, Prebid.js, and VAST for global DSP compatibility."
+    },
+    "item_2": {
+      "period": "Feb 2026 – Apr 2026",
+      "role": "Mobile Developer",
+      "company": "Okadoo · Contract",
+      "description": "Built the product creation flow for Algeria's first B2B marketplace in Flutter, cutting supplier onboarding time by ~35%."
+    },
+    "item_3": {
+      "period": "Dec 2025 – Jan 2026",
+      "role": "Mobile Developer",
+      "company": "Maystro Delivery · Contract",
+      "description": "Built a WMS module for PDA devices in Flutter, increasing warehouse processing speed by 25% and cutting UI errors by 40%."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "item_1": {
+      "period": "2022 – 2027 (Expected)",
+      "role": "Engineer's Degree, AI & Data Science",
+      "company": "ESTIN",
+      "description": "Five-year engineering program in large-scale software systems and advanced AI, with academic focus on probability, statistics, and machine learning."
+    }
+  },
+  "skills": {
+    "heading": "Skills",
+    "python": {
+      "title": "Python",
+      "category": "Language",
+      "description": "NumPy, pandas, scikit-learn, data pipelines",
+      "experience_years": "3",
+      "experience_label": "years of experience"
+    },
+    "ai": {
+      "title": "AI & ML",
+      "category": "Applied ML",
+      "description": "Prediction, classification, anomaly detection",
+      "experience_years": "2",
+      "experience_label": "years of experience"
+    },
+    "go": {
+      "title": "Go",
+      "category": "Backend",
+      "description": "Gin, concurrency, low-latency REST APIs",
+      "experience_years": "2",
+      "experience_label": "years of experience"
+    },
+    "flutter": {
+      "title": "Flutter",
+      "category": "Mobile",
+      "description": "Dart, BLoC pattern, clean architecture",
+      "experience_years": "2",
+      "experience_label": "years of experience"
+    },
+    "databases": {
+      "title": "Databases",
+      "category": "Data",
+      "description": "PostgreSQL, MongoDB, Redis caching",
+      "experience_years": "2",
+      "experience_label": "years of experience"
+    },
+    "devops": {
+      "title": "Docker",
+      "category": "DevOps",
+      "description": "Containerization, CI/CD with GitHub Actions",
+      "experience_years": "2",
+      "experience_label": "years of experience"
+    }
+  },
+  "contact": {
+    "status": "Open to opportunities",
+    "email_label": "Email",
+    "email_url": "mailto:zerkhefabdraouf@gmail.com",
+    "github_label": "GitHub",
+    "github_url": "https://github.com/raufzer",
+    "x_label": "X",
+    "x_url": "https://x.com/raufzer",
+    "linkedin_label": "Linkedin",
+    "linkedin_url": "https://www.linkedin.com/in/raufzer/"
+  }
+}
