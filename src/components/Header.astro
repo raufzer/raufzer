@@ -1,0 +1,43 @@
+---
+import I18NDebug from "@ariaskit/astro-i18n/I18NDebug.astro";
+import { cls } from "@/src/lib/utils";
+
+type Locales = "en" | "fr"
+
+interface Props {
+    nav:{path:string;text:string}[];
+    locales: Locales[];
+    currentLocale:string
+}
+
+const { nav, locales, currentLocale } = Astro.props as Props
+
+---
+
+<header class="py-15 flex items-center justify-between flex-col md:flex-row fixed top-0 left-1/2 -translate-x-1/2 bg-background z-40">
+    <div class="flex items-center gap-5 order-2 md:order-1">
+        {
+            nav.map((item) => (
+                <I18NDebug key={item.text}>
+                    <a
+                        class="opacity-50 transition-all duration-200 hover:opacity-100 text-[1rem] md:text-[0.85rem]"
+                        href={`/${currentLocale}/${item.path}`}
+                    >
+                        {item.text}
+                    </a>
+                </I18NDebug>
+            ))
+        }
+    </div>
+    <div class="order-1 md:order-2 mb-4 md:mb-0 space-x-2 md:space-x-0" >
+        {
+            locales.map(item =>
+                <a href={`/${item.toLowerCase()}`} class={cls("uppercase text-[1.2rem] md:text-[0.9rem] hover:opacity-100 cursor-pointer opacity-70 transition-all duration-200", item === currentLocale.toLowerCase() && "opacity-100")}>
+                    {item}
+                </a>
+                <span class="last:hidden opacity-50 text-[1.2rem] md:text-[0.9rem]">/</span>
+            )
+        }
+    </div>
+    <div class="absolute -bottom-10 left-0 w-full h-18  pointer-events-none bg-linear-to-b from-background via-background/80 to-background/20 z-10"></div>
+</header>

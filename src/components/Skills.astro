@@ -1,0 +1,59 @@
+---
+import I18NDebug from "@ariaskit/astro-i18n/I18NDebug.astro";
+import { cls } from "@/src/lib/utils";
+
+type Option = { key: string; value: string | number };
+
+interface Content {
+    primary?: boolean;
+    title: Option;
+    category: Option;
+    description: Option;
+    experience_years: Option;
+    experience_label: Option;
+}
+
+interface Props {
+    heading: Option;
+    content: Content[];
+}
+
+const { heading, content } = Astro.props as Props;
+---
+
+<section class="mt-20">
+    <I18NDebug key={heading.key}>
+        <h2 class="opacity-50 uppercase mb-6">{heading.value}</h2>
+    </I18NDebug>
+    <div class="grid grid-cols-1 md:grid-cols-3">
+        {
+            content.map((skill) => (
+                <article class={cls("border p-3 flex flex-col justify-between", skill.primary && "border-brand/40")}>
+                    <I18NDebug key={skill.title.key}>
+                        <p class="pb-1 text-brand">
+                            {">"}
+                            {skill.title.value}
+                        </p>
+                    </I18NDebug>
+
+                    <I18NDebug key={skill.category.key}>
+                        <span class="text-[0.7rem] p-1  text-white/70 uppercase">{skill.category.value}</span>
+                    </I18NDebug>
+
+                    <I18NDebug key={skill.description.key}>
+                        <p class="text-[0.88rem] opacity-50 py-2 border-b line-clamp-3 h-[6.25rem]">{skill.description.value}</p>
+                    </I18NDebug>
+
+                    <div class="flex gap-2 items-center pt-2">
+                        <I18NDebug key={skill.experience_years.key}>
+                            <p class="text-3xl">{skill.experience_years.value}</p>
+                        </I18NDebug>
+                        <I18NDebug key={skill.experience_label.key}>
+                            <p class="text-[0.88rem] opacity-50">{skill.experience_label.value}</p>
+                        </I18NDebug>
+                    </div>
+                </article>
+            ))
+        }
+    </div>
+</section>

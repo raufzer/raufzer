@@ -1,0 +1,142 @@
+---
+import '@/src/styles/global.css';
+import type { ImageMetadata } from 'astro';
+import ClientRouter from 'astro/components/ClientRouter.astro';
+
+type OgType = 'website' | 'article' | 'book' | 'profile' | 'music.song' | 'music.album' | 'music.playlist' | 'music.radio_station' | 'video.movie' | 'video.episode' | 'video.tv_show' | 'video.other';
+type FontMimeType = 'font/ttf' | 'font/otf' | 'font/woff' | 'font/woff2' | 'application/font-woff' | 'application/font-woff2' | 'application/vnd.ms-fontobject' | 'application/x-font-ttf' | 'application/x-font-opentype';
+type FaviconRel = 'icon' | 'shortcut icon' | 'apple-touch-icon' | 'apple-touch-icon-precomposed' | 'mask-icon' | 'manifest' | 'apple-touch-startup-image' | 'fluid-icon' | 'preload';
+type FaviconMimeType = 'image/x-icon' | 'image/png' | 'image/svg+xml' | 'image/gif' | 'image/webp' | 'image/jpeg' | 'image/jpg' | 'image/avif';
+
+interface Props {
+  title: string;
+  description: string;
+  image: ImageMetadata;
+  enableClientRouter: boolean;
+  preloadFonts?: { href: string; type: FontMimeType }[];
+  loadRSS?: boolean;
+  ogType: OgType;
+  favicons: {
+    rel: FaviconRel;
+    type: FaviconMimeType;
+    href: string;
+    sizes?: string;
+    color?: string;
+  }[];
+  googleSiteVerification?: string;
+  lang: string; 
+  alternateLinks?: { href: string; hreflang: string }[]; 
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const {
+  title,
+  description,
+  preloadFonts,
+  enableClientRouter = true,
+  ogType = 'website',
+  image,
+  loadRSS,
+  favicons,
+  googleSiteVerification,
+  lang,
+  alternateLinks = []
+} = Astro.props as Props;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+{
+  alternateLinks.map(link => (
+    <link 
+      rel="alternate" 
+      href={new URL(link.href, Astro.site).toString()} 
+      hreflang={link.hreflang} 
+    />
+  ))
+}
+
+<>
+  {
+    favicons?.map(icon => (
+      <link
+        rel={icon.rel}
+        href={icon.href}
+        type={icon.type}
+        sizes={icon.sizes}
+        color={icon.color}
+      />
+    ))
+  }
+</>
+
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+{
+
+  loadRSS && (
+
+    <link
+
+      rel="alternate"
+
+      type="application/rss+xml"
+
+      title={title}
+
+      href={new URL('rss.xml', Astro.site)}
+
+    />
+
+  )
+
+}
+<meta name="generator" content={Astro.generator} />
+
+<>
+  {
+    preloadFonts &&
+      preloadFonts.map(font => (
+        <link rel="preload" href={font.href} as="font" type={font.type} crossorigin />
+      ))
+  }
+</>
+
+<link rel="canonical" href={canonicalURL} />
+
+<title>{title.charAt(0).toUpperCase() + title.slice(1)}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image.src, Astro.url)} />
+
+<meta property="og:locale" content={lang} />
+{
+  alternateLinks.map(link => (
+    <meta property="og:locale:alternate" content={link.hreflang} />
+  ))
+}
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+<meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)" />
+
+{
+  googleSiteVerification && (
+    <meta content={googleSiteVerification} name="google-site-verification" />
+  )
+}
+
+{enableClientRouter && <ClientRouter />}

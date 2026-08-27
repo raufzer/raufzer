@@ -1,0 +1,64 @@
+---
+import I18NDebug from "@ariaskit/astro-i18n/I18NDebug.astro";
+import Arrow from "@lucide/astro/icons/corner-right-up";
+
+type Item = {
+    nameKey: string;
+    descriptionKey: string;
+    name: string;
+    description: string;
+    link?: string;
+};
+
+interface Props {
+    title: { key: string; value: string };
+    empty: { key: string; value: string };
+    items: Item[];
+}
+
+const { title, empty, items } = Astro.props as Props;
+---
+
+<section id={title.value.toLowerCase()} class="scroll-mt-50">
+    <I18NDebug key={title.key}>
+        <h2 class="opacity-50 uppercase mb-6 mt-15">{title.value}</h2>
+    </I18NDebug>
+
+    {
+        items.length === 0 ? (
+            <I18NDebug key={empty.key}>
+                <p class="opacity-50 text-[0.88rem]">{empty.value}</p>
+            </I18NDebug>
+        ) : (
+            <ul class="space-y-3">
+                {items.map((article) => (
+                    <li class="group">
+                        <I18NDebug key={article.nameKey}>
+                            {article.link ? (
+                                <a
+                                    href={article.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    name={article.name}
+                                    class="mb-5 font-semibold transition-all duration-200 group-hover:text-brand "
+                                >
+                                    {article.name}
+                                </a>
+                            ) : (
+                                <span class="mb-5 font-semibold transition-all duration-200 group-hover:text-brand ">
+                                    {article.name}
+                                </span>
+                            )}
+                            <Arrow class="h-3 w-3 inline transition-all text-brand  duration-200 invisible opacity-0 group-hover:visible group-hover:opacity-100" />
+                        </I18NDebug>
+                        <I18NDebug key={article.descriptionKey}>
+                            <p class="opacity-50 text-[0.88rem]">
+                                {article.description}
+                            </p>
+                        </I18NDebug>
+                    </li>
+                ))}
+            </ul>
+        )
+    }
+</section>

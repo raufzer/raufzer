@@ -1,0 +1,56 @@
+---
+import I18NDebug from "@ariaskit/astro-i18n/I18NDebug.astro";
+
+type Out = { key: string; value: string };
+
+interface Entry {
+    period: Out;
+    role: Out;
+    company: Out;
+    description: Out;
+}
+
+interface Props {
+    title: Out;
+    entries: Entry[];
+}
+
+const { title, entries } = Astro.props as Props;
+---
+
+<section id={title.value.toLowerCase()} class="scroll-mt-50">
+    <h2 class="opacity-50 uppercase mb-6 mt-15">
+        <I18NDebug key={title.key}>
+            {title.value}
+        </I18NDebug>
+    </h2>
+    {
+        entries.map((job) => (
+            <ul>
+                <li class="mb-4 grid grid-cols-1 md:grid-cols-10">
+                    <span class="opacity-50 text-[0.87rem] col-span-3">
+                        <I18NDebug key={job.period.key}>
+                            {job.period.value}
+                        </I18NDebug>
+                    </span>
+                    <div class="col-span-7">
+                        <div>
+                            <I18NDebug key={job.role.key}>
+                                <span>{job.role.value}</span>
+                            </I18NDebug>
+                            <span class="opacity-50">|</span>
+                            <I18NDebug key={job.company.key}>
+                                <span>{job.company.value}</span>
+                            </I18NDebug>
+                        </div>
+                        <I18NDebug key={job.description.key}>
+                            <p class="text-[0.87rem] opacity-50">
+                                {job.description.value}
+                            </p>
+                        </I18NDebug>
+                    </div>
+                </li>
+            </ul>
+        ))
+    }
+</section>

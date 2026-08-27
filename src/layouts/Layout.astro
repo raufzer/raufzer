@@ -1,0 +1,38 @@
+---
+import { PageMetadata } from "@/src/components/hybrid-astro-ui/page-metadata";
+import OGImage from "@/src/assets/raufzer.png";
+
+interface Props {
+	title: string;
+	description: string;
+	locale: string;
+	alternateLinks?: { href: string; hreflang: string }[];
+}
+
+const { title, description, locale, alternateLinks } =
+	Astro.props as Props;
+---
+
+<!doctype html>
+<html lang={locale} class="dark">
+	<head>
+		<PageMetadata
+			lang={locale}
+			title={title}
+			description={description}
+			image={OGImage}
+			enableClientRouter
+			ogType="website"
+			favicons={[
+				{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+				{ rel: "icon", type: "image/png", href: "/icon-192.png", sizes: "192x192" },
+				{ rel: "icon", type: "image/png", href: "/icon-512.png", sizes: "512x512" },
+				{ rel: "apple-touch-icon", type: "image/png", href: "/apple-touch-icon.png", sizes: "180x180" },
+			]}
+			alternateLinks={alternateLinks}
+		/>
+	</head>
+	<body class="*:max-w-2xl *:w-full flex flex-col  items-center w-full font-mono px-5 md:px-0 leading-7" >
+		<slot />
+	</body>
+</html>

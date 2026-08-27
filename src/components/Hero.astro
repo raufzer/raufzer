@@ -1,0 +1,34 @@
+---
+import I18NDebug from "@ariaskit/astro-i18n/I18NDebug.astro";
+export type KT = { key: string; value: string };
+
+interface Props {
+    name: string;
+    title: KT;
+    p1: KT;
+    p2: KT;
+    p3: KT;
+}
+
+const { name, title, p1, p2, p3 } = Astro.props as Props;
+---
+
+<section id="about" class="mb-10 mt-50">
+    <h1 class="mb-4 font-semibold text-xl">{name}</h1>
+    <div class="[&_p]:mb-6 leading-7">
+        <p>
+            <I18NDebug key={title.key}>
+                <span class="text-brand">{title.value} </span>
+            </I18NDebug>
+            <I18NDebug key={p1.key}>
+                <span class="opacity-50">{p1.value}</span>
+            </I18NDebug>
+        </p>
+        <I18NDebug key={p2.key}>
+            <p class="opacity-50">{p2.value}</p>
+        </I18NDebug>
+        <I18NDebug key={p3.key}>
+            <p class="opacity-50">{p3.value}</p>
+        </I18NDebug>
+    </div>
+</section>
