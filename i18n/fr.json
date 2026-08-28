@@ -26,19 +26,19 @@
     "item_1": {
       "period": "Mai 2025 – Juil. 2026",
       "role": "Ingénieur Backend",
-      "company": "RetailSpot · Freelance",
+      "company": "RetailSpot · Contract",
       "description": "Développement d'un ad server haute performance en Go, avec une latence inférieure à 2 ms sur les enchères publicitaires en temps réel. Intégration d'OpenRTB, Prebid.js et VAST pour la compatibilité DSP mondiale."
     },
     "item_2": {
       "period": "Févr. 2026 – Avr. 2026",
       "role": "Développeur Mobile",
-      "company": "Okadoo · Freelance",
+      "company": "Okadoo · Contract",
       "description": "Développement du parcours de création de produits de la première marketplace B2B d'Algérie en Flutter, réduisant le temps d'intégration des fournisseurs d'environ 35 %."
     },
     "item_3": {
       "period": "Déc. 2025 – Janv. 2026",
       "role": "Développeur Mobile",
-      "company": "Maystro Delivery · Freelance",
+      "company": "Maystro Delivery · Contract",
       "description": "Développement d'un module WMS pour terminaux PDA en Flutter, augmentant la vitesse de traitement en entrepôt de 25 % et réduisant les erreurs d'interface de 40 %."
     }
   },
