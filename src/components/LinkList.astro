@@ -19,7 +19,7 @@ interface Props {
 const { title, empty, items } = Astro.props as Props;
 ---
 
-<section id={title.value.toLowerCase()} class="scroll-mt-50">
+<section id={title.value.toLowerCase()} class="scroll-mt-44 md:scroll-mt-50">
     <I18NDebug key={title.key}>
         <h2 class="opacity-50 uppercase mb-6 mt-15">{title.value}</h2>
     </I18NDebug>
